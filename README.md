@@ -92,8 +92,8 @@ setProfileDrawableBorder(border: Int)
 setProfileDrawableBorderColor(color: Int)
 
 setProfileName(name: String)
-setProfileName(nameRes: Int
-setProfileNameTextColor(nameColorRes: Int
+setProfileName(nameRes: Int)
+setProfileNameTextColor(nameColorRes: Int)
 
 create(isCancelable: Boolean = true, animationRes: Int = 0, layout: ScrollView = getLayout(), useChromeTab: Boolean = false)
 cancel()
