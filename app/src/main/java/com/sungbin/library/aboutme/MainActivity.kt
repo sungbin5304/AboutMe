@@ -9,7 +9,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val aboutMe = AboutMe(this)
-        aboutMe.setFont(R.font.singleday)
         aboutMe.setIconTint(R.color.colorPrimary)
         aboutMe.setSnsButtonTextColor(R.color.colorGreen)
         aboutMe.setShowFavorite(false)
