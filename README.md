@@ -99,8 +99,20 @@ cancel()
 getLayout(): ScrollView
 ```
 
+## View Ids for getLayout()
+You can see view ids in [[this]](https://github.com/sungbin5304/AboutMe/blob/master/library/src/main/res/layout/aboutme_layout.xml).
+
+
 ### [[Example]](https://github.com/sungbin5304/AboutMe/blob/master/app/src/main/java/com/sungbin/library/aboutme/MainActivity.kt#L11)
 
+### Create() use in Java.
+```kotlin
+create(animationRes = R.style.DialogAnimation, useChromeTab = true)
+```
+to
+```java
+create(true, R.style.DialogAnimation, getLayout(), true)
+```
 
 ## License
 ```
