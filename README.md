@@ -107,7 +107,7 @@ getLayout(): ScrollView
 SnsButtonItem(title: String?, icon: Int?, link: String?)
 ```
 
-# SnsButtonType<br>(can use `SnsButtonItem` `icon` parameter)
+# SnsButtonType<br>(can use SnsButtonItem icon parameter)
 ## Lists
 ```kotlin
 EMAIL = 0
