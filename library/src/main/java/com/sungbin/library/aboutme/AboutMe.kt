@@ -24,11 +24,12 @@ class AboutMe constructor(ctx: Activity){
     private val context = ctx
     private val items = ArrayList<SnsButtonItem>()
     private var alert: AlertDialog? = null
-    private var fontRes: Int = 0
-    private var textColorRes: Int = 0
-    private var iconTintRes: Int = 0
-    private var nameColorRes: Int = 0
-    private var introduceColorRes: Int = 0
+    private var fontRes = 0
+    private var textColorRes = 0
+    private var iconTintRes = 0
+    private var nameColorRes = 0
+    private var introduceColorRes = 0
+    private var useChromeTab = false
 
     private var favoriteLayout: LinearLayout
     private var lineLayout: LinearLayout
@@ -666,10 +667,12 @@ class AboutMe constructor(ctx: Activity){
         this.fontRes = fontRes
     }
 
-    fun create(isCancelable: Boolean = true, animationRes: Int = 0, layout: ScrollView = getLayout()){
+    fun create(isCancelable: Boolean = true, animationRes: Int = 0, layout: ScrollView = getLayout(), useChromeTab: Boolean = false){
         val dialog = AlertDialog.Builder(context)
         dialog.setView(layout)
         dialog.setCancelable(isCancelable)
+
+        this.useChromeTab = useChromeTab
 
         alert = dialog.create()
         if(animationRes != 0) alert!!.window!!.setWindowAnimations(animationRes)
@@ -716,18 +719,27 @@ class AboutMe constructor(ctx: Activity){
         var link = url
         if(!link!!.contains("http")) link = "https://$link"
         try {
-            val pm = context.packageManager
-            val pi =
-                pm.getPackageInfo("com.android.chrome", PackageManager.GET_META_DATA)
-            @Suppress("UNUSED_VARIABLE")
-            val appInfo = pi.applicationInfo
-            val builder = CustomTabsIntent.Builder()
-            if(iconTintRes != 0) {
-                builder.setToolbarColor(ContextCompat.getColor(context, iconTintRes))
+            if(useChromeTab) {
+                val pm = context.packageManager
+                val pi =
+                    pm.getPackageInfo("com.android.chrome", PackageManager.GET_META_DATA)
+
+                @Suppress("UNUSED_VARIABLE")
+                val appInfo = pi.applicationInfo
+                val builder = CustomTabsIntent.Builder()
+                if (iconTintRes != 0) {
+                    builder.setToolbarColor(ContextCompat.getColor(context, iconTintRes))
+                }
+                val customTabsIntent = builder.build()
+                customTabsIntent.intent.setPackage("com.android.chrome")
+                customTabsIntent.launchUrl(context, Uri.parse(link))
             }
-            val customTabsIntent = builder.build()
-            customTabsIntent.intent.setPackage("com.android.chrome")
-            customTabsIntent.launchUrl(context, Uri.parse(link))
+            else {
+                val intent = Intent(Intent.ACTION_VIEW)
+                val uri: Uri = Uri.parse(link)
+                intent.data = uri
+                context.startActivity(intent)
+            }
         } catch (e: PackageManager.NameNotFoundException) {
             try {
                 val intent = Intent(Intent.ACTION_VIEW)

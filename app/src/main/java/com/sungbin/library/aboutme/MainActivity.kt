@@ -34,6 +34,6 @@ class MainActivity : AppCompatActivity() {
         aboutMe.addSnsButton(SnsButtonItem("TWITTER", SnsButtonType.TWITTER, "https://twitter.com/wltjdqls5304"))
         aboutMe.addSnsButton(SnsButtonItem("YOUTUBE", SnsButtonType.YOUTUBE, "https://www.youtube.com/channel/UCSvfSbfnidDPN6_Pm3wFAzQ"))
         aboutMe.addSnsButton(SnsButtonItem("PLAYSTORE", SnsButtonType.PLAYSTORE, "https://play.google.com/store/apps/dev?id=5527691348431041833&hl=ko"))
-        aboutMe.create(animationRes = R.style.DialogAnimation)
+        aboutMe.create(animationRes = R.style.DialogAnimation, useChromeTab = true)
     }
 }
