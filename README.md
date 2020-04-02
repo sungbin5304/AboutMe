@@ -1,6 +1,3 @@
-# AboutMe
-AboutMe Library for Android.
-
 ![Logo](https://raw.githubusercontent.com/sungbin5304/AboutMe/master/About%20ME%20(1).png)
 
 -----
