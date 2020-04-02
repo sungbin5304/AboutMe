@@ -61,6 +61,8 @@ aboutMe.addSnsButton(SnsButtonItem("GITHUB", SnsButtonType.GITHUB, "https://gith
 aboutMe.create(animationRes = R.style.DialogAnimation, useChromeTab = true)
 ```
 
+### If you set `useChromeTab` parameter true, you need to implementation customtabs library.
+
 ## All Methods
 ```kotlin
 setAge(ageInt: Int)
@@ -145,7 +147,7 @@ create(true, R.style.DialogAnimation, getLayout(), true)
 create(true, 0, getLayout(), true)
 ```
 
-## [[Example]](https://github.com/sungbin5304/AboutMe/blob/master/app/src/main/java/com/sungbin/library/aboutme/MainActivity.kt#L11)
+# [[Example]](https://github.com/sungbin5304/AboutMe/blob/master/app/src/main/java/com/sungbin/library/aboutme/MainActivity.kt#L11)
 
 -----
 
