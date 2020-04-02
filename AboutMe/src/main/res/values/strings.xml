@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="background_image_desc">background_image</string>
+    <string name="profile_name">SungBin JI</string>
+    <string name="introduce_desc">PROGRAMMER</string>
+    <string name="string_age">Age</string>
+    <string name="age_number">19</string>
+    <string name="string_favorite">Favorite</string>
+    <string name="favorite_desc">Play LOL</string>
+    <string name="snsnlogo_desc">sns_logo</string>
+    <string name="sns_title_desc">sns title</string>
+</resources>
