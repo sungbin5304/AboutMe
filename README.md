@@ -2,6 +2,12 @@
 
 -----
 
+# Preview
+<div>
+<img src="https://raw.githubusercontent.com/sungbin5304/AboutMe/master/KakaoTalk_20200402_225029190.png" width="400" height="650">
+<img src="https://raw.githubusercontent.com/sungbin5304/AboutMe/master/KakaoTalk_20200402_225702055.png" width="400" height="650">
+</div>
+
 # Download [![](https://jitpack.io/v/sungbin5304/AboutMe.svg)](https://jitpack.io/#sungbin5304/AboutMe)
 
 ```Gradle
