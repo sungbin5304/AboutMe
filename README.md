@@ -145,7 +145,7 @@ create(true, R.style.DialogAnimation, getLayout(), true)
 create(true, 0, getLayout(), true)
 ```
 
-### [[Example]](https://github.com/sungbin5304/AboutMe/blob/master/app/src/main/java/com/sungbin/library/aboutme/MainActivity.kt#L11)
+## [[Example]](https://github.com/sungbin5304/AboutMe/blob/master/app/src/main/java/com/sungbin/library/aboutme/MainActivity.kt#L11)
 
 -----
 
