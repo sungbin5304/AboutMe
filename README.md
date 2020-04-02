@@ -34,6 +34,73 @@ dependencies {
 }
 ```
 
+# Usage
+
+## Init
+```kotlin
+val aboutMe = AboutMe(this)
+```
+
+## Set Default Information
+```kotlin
+aboutMe.setProfileName("SungBin Ji")
+aboutMe.setIntroduceText("This is AboutMe Library Test Application.")
+aboutMe.setProfileDrawable("https://cdn.pixabay.com/photo/2015/10/09/00/55/lotus-978659_960_720.jpg")
+```
+
+## Add SNS Buttons
+```kotlin
+aboutMe.addSnsButton(SnsButtonItem("EMAIL", SnsButtonType.EMAIL, "sungbin.dev@gmail.com"))
+aboutMe.addSnsButton(SnsButtonItem("TELEGRAM", SnsButtonType.TELEGRAM, "https://t.me/sungbin5304"))
+aboutMe.addSnsButton(SnsButtonItem("KAKAOTALK", SnsButtonType.KAKAOTALK, "https://open.kakao.com/o/sZnSRY4b"))
+aboutMe.addSnsButton(SnsButtonItem("GITHUB", SnsButtonType.GITHUB, "https://github.com/sungbin5304"))
+```
+
+## Create
+```kotlin
+aboutMe.create(animationRes = R.style.DialogAnimation, useChromeTab = true)
+```
+
+## All Methods
+```kotlin
+setAge(ageInt: Int)
+setFont(fontRes: Int)
+setDiagonalAngle(angle: Int)
+setIconTint(iconTintRes: Int)
+setShowFavorite(isShow: Boolean)
+
+addSnsButton(item: SnsButtonItem)
+setSnsButtonTextColor(textColorRes: Int)
+
+setFavoriteText(text: String
+setFavoriteTitleText(title: String)
+
+setIntroduceText(name: String)
+setIntroduceText(nameRes: Int)
+setIntroduceTextColor(introduceColorRes: Int)
+
+setBackgroundDrawable(drawable: Drawable)
+setBackgroundDrawable(drawableRes: Int)
+setBackgroundDrawable(link: String)
+
+setProfileDrawable(drawable: Drawable)
+setProfileDrawable(drawableRes: Int)
+setProfileDrawable(link: String)
+setProfileDrawableBorder(border: Int)
+setProfileDrawableBorderColor(color: Int)
+
+setProfileName(name: String)
+setProfileName(nameRes: Int
+setProfileNameTextColor(nameColorRes: Int
+
+create(isCancelable: Boolean = true, animationRes: Int = 0, layout: ScrollView = getLayout(), useChromeTab: Boolean = false)
+cancel()
+
+getLayout(): ScrollView
+```
+
+### [[Example]](https://github.com/sungbin5304/AboutMe/blob/master/app/src/main/java/com/sungbin/library/aboutme/MainActivity.kt#L11)
+
 
 ## License
 ```
