@@ -105,13 +105,15 @@ You can see view ids in [[this]](https://github.com/sungbin5304/AboutMe/blob/mas
 
 ### [[Example]](https://github.com/sungbin5304/AboutMe/blob/master/app/src/main/java/com/sungbin/library/aboutme/MainActivity.kt#L11)
 
-### Create() use in Java.
+### Kotlin Syntax Create() use in Java.
 ```kotlin
 create(animationRes = R.style.DialogAnimation, useChromeTab = true)
 ```
 to
 ```java
 create(true, R.style.DialogAnimation, getLayout(), true)
+               or 
+create(true, 0, getLayout(), true)
 ```
 
 ## License
