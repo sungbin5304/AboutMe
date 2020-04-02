@@ -99,11 +99,40 @@ cancel()
 getLayout(): ScrollView
 ```
 
-## View Ids for getLayout()
+# SnsButtonItem 
+## Usage
+```kotlin
+SnsButtonItem(title: String?, icon: Int?, link: String?)
+```
+
+# SnsButtonType<br>(can use SnsButtonItem icon parameter)
+## Lists
+```kotlin
+EMAIL = 0
+FACEBOOK = 1
+GITHUB = 2
+HOME = 3
+INSTAGRAM = 4
+KAKAOTALK = 5
+LINKEDIN = 6
+PAYPAL = 7
+SKYPE = 8
+SNAPCHAT = 9
+SOUNDCLOUD = 10
+SPOTIFY = 11
+STEAM = 12
+TELEGRAM = 13
+TUMBLR = 14
+TWITCH = 15
+TWITTER = 16
+VIMEO = 17
+WHATSAPP = 18
+YOUTUBE = 19
+PLAYSTORE = 20
+```
+
+### View Ids for getLayout()
 You can see view ids in [[this]](https://github.com/sungbin5304/AboutMe/blob/master/library/src/main/res/layout/aboutme_layout.xml).
-
-
-### [[Example]](https://github.com/sungbin5304/AboutMe/blob/master/app/src/main/java/com/sungbin/library/aboutme/MainActivity.kt#L11)
 
 ### Kotlin Syntax Create() use in Java.
 ```kotlin
@@ -115,6 +144,10 @@ create(true, R.style.DialogAnimation, getLayout(), true)
                or 
 create(true, 0, getLayout(), true)
 ```
+
+### [[Example]](https://github.com/sungbin5304/AboutMe/blob/master/app/src/main/java/com/sungbin/library/aboutme/MainActivity.kt#L11)
+
+-----
 
 ## License
 ```
