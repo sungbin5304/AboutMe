@@ -61,7 +61,7 @@ aboutMe.addSnsButton(SnsButtonItem("GITHUB", SnsButtonType.GITHUB, "https://gith
 aboutMe.create(animationRes = R.style.DialogAnimation, useChromeTab = true)
 ```
 
-### If you set `useChromeTab` parameter true, you need to implementation customtabs library.
+### If you set `useChromeTab` parameter true,<br>you need to implementation customtabs library.
 
 ## All Methods
 ```kotlin
@@ -107,7 +107,7 @@ getLayout(): ScrollView
 SnsButtonItem(title: String?, icon: Int?, link: String?)
 ```
 
-# SnsButtonType<br>(can use SnsButtonItem icon parameter)
+# SnsButtonType<br>(can use `SnsButtonItem` icon parameter)
 ## Lists
 ```kotlin
 EMAIL = 0
