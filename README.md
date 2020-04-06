@@ -3,7 +3,6 @@
 -----
 
 # Preview [[Google PlayStore]](https://play.google.com/store/apps/details?id=com.sungbin.library.myapplication) [[APK]](https://github.com/sungbin5304/AboutMe/raw/master/app-debug.apk)
-> It is currently in the process of uploading to Google Play Store.
 <div>
 <img src="https://raw.githubusercontent.com/sungbin5304/AboutMe/master/KakaoTalk_20200402_231932836.png" width="400" height="650">
 <img src="https://raw.githubusercontent.com/sungbin5304/AboutMe/master/KakaoTalk_20200402_225702055.png" width="400" height="650">
